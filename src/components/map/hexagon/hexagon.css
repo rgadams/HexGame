@@ -1,0 +1,51 @@
+.grass {
+    --color: green;
+}
+
+.rock  {
+    --color: grey;
+}
+
+.sand {
+    --color: tan;
+}
+
+.hex {
+    --s: 100px;
+    --m: 4px;
+    --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
+    position: absolute;
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s)*1.1547); 
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    background: var(--color);
+    margin-bottom: calc(var(--m) - var(--s)*0.2885);
+}
+
+/* .inner-hex:nth-child(1) {
+    float: left;
+    border-right: 30px solid var(--color);
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+
+.inner-hex:nth-child(2) {
+    float: left;
+    width: 60px;
+    height: 104px;
+    background-color: var(--color);
+}
+
+.inner-hex:nth-child(3) {
+    float: left;
+    border-left: 30px solid var(--color);
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+
+.inner-hex:hover {
+    cursor: pointer;
+} */
